@@ -1,0 +1,59 @@
+html{
+    scroll-behavior: smooth;
+}
+#main{
+    background: #ded9ff;
+    background: linear-gradient(#ded9ff, #ffc5f2);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    flex-direction: column;
+}
+
+.navbar * {
+    color: #fff6fe;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    font-weight:bold;
+}
+.navbar .options:hover {
+    text-decoration: underline;
+}
+.maintitle{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 49px;
+    font-weight: lighter;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    flex-direction: column;
+}
+.allsubtitles{
+    color: #fff6fe;
+    font-family: 'Lora', serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #fff6fe;
+}
+.allsubtext{
+    color: #6a758a;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    width: 20rem;
+    text-align: center;
+    background-color: rgb(166, 163, 170, 30%);
+
+
+}
