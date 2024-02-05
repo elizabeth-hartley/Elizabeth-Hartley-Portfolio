@@ -12,7 +12,6 @@ html{
     padding: 10px 10%;
     flex-direction: column;
 }
-
 .navbar * {
     color: #fff6fe;
     text-decoration: none;
@@ -31,6 +30,10 @@ html{
     font-style: italic;
     font-size: 49px;
     font-weight: lighter;
+    padding-bottom: 2rem;
+}
+button{
+
 }
 section{
     display: flex;
@@ -53,7 +56,30 @@ section{
     font-size: 20px;
     width: 20rem;
     text-align: center;
-    background-color: rgb(166, 163, 170, 30%);
+    border-radius: 25px;
+    background-color: rgb(255, 246, 254, 30%);
+    padding: 20px;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(106, 117, 138, 60%);
+    font-size: 30px;
+}
 
+.icons a {
+    margin: 0.5rem;
+}
 
+.icons2 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(106, 117, 138, 60%);
+    font-size: 30px;
+}
+
+.icons2 a {
+    padding:0.2rem;
 }
