@@ -139,3 +139,7 @@ section{
 #totopbutton:hover {
     background-color: rgb(255, 246, 254, 50%);
 }
+
+@media screen and (min-width: 600px) {
+
+}
