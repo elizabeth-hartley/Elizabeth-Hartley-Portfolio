@@ -18,12 +18,14 @@ html{
 .navbar * {
     color: #fff6fe;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Lora', serif;
     font-size: 30px;
     font-weight:bold;
+}
+.navlinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .navbar a:hover {
     text-decoration: underline;
@@ -73,9 +75,17 @@ section{
 .allsubtitles{
     color: #fff6fe;
     font-family: 'Lora', serif;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     text-decoration: underline;
+    text-decoration-color: #fff6fe;
+    padding-bottom: 1rem;
+}
+.allprojectsubtitles{
+    color: #fff6fe;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    font-weight: bold;
     text-decoration-color: #fff6fe;
 }
 .allsubtext{
@@ -114,7 +124,11 @@ section{
 
 .icons2 a {
     padding:0.2rem;
+    text-decoration: none;
+    color: rgb(106, 117, 138, 60%);
+
 }
+
 
 .icons2 a:hover {
     color: rgb(255, 246, 254, 50%);
@@ -138,8 +152,51 @@ section{
 
 #totopbutton:hover {
     background-color: rgb(255, 246, 254, 50%);
-}
+}.aboutmeandcontactdiv{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 735px) {
+    .navbar {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .navlinks {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        min-width: 400px;
+    }
+    .aboutmeandcontactdiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15rem;
+    }
+    button{
+        margin-bottom: 2rem;
+        height: 100px;
+        width: 140px;
+        font-size: large;
+    }
+    .allsubtext{
+        font-weight: bold;
+        font-size: 25px;
+        width: 25rem;
+    }
+    .projectsrow{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
 
+    }
+    .icons2 {
+        flex-direction: row;
+        gap: 1.5rem;
+
+    }
 }
