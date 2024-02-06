@@ -3,7 +3,7 @@ html{
 }
 #main{
     background: #ded9ff;
-    background: linear-gradient(#ded9ff, #ffc5f2);
+    background: linear-gradient(#bdb5f3, #ffc5f2, #a9bae8);
 }
 .logo{
     padding-bottom: 2rem;
@@ -25,7 +25,7 @@ html{
     font-size: 30px;
     font-weight:bold;
 }
-.navbar .options:hover {
+.navbar a:hover {
     text-decoration: underline;
 }
 .maintitle{
@@ -36,12 +36,17 @@ html{
     padding-bottom: 2rem;
 }
 button{
-    width: 10%;
-    height: 15%;
-    font-size:medium;
+    width: 110px;
+    height: 70px;
+    font-size: medium;
     background-color: transparent;
-    color: #6a758a;
-    border: solid 3px white;
+    border-color: rgb(106, 117, 138, 40%);
+    color:#6a758a;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+button:hover {
+    background-color: rgb(255, 246, 254, 50%);
 }
 section{
     display: flex;
@@ -49,6 +54,21 @@ section{
     align-items: center;
     padding: 10px 10%;
     flex-direction: column;
+}
+.images{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+.projectimages{
+    display:flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(255, 246, 254, 30%);
+    margin: 20px;
+    border: 5px solid rgb(106, 117, 138, 10%);
 }
 .allsubtitles{
     color: #fff6fe;
@@ -59,8 +79,9 @@ section{
     text-decoration-color: #fff6fe;
 }
 .allsubtext{
-    color: #6a758a;
+    color: rgb(106, 117, 138, 50%);
     font-family: 'Lora', serif;
+    font-weight: bold;
     font-size: 20px;
     width: 20rem;
     text-align: center;
@@ -80,6 +101,9 @@ section{
     margin: 0.5rem;
 }
 
+.icons a:hover {
+    color: rgb(255, 246, 254, 50%);
+}
 .icons2 {
     display:flex;
     flex-direction: column;
@@ -91,12 +115,16 @@ section{
 .icons2 a {
     padding:0.2rem;
 }
+
+.icons2 a:hover {
+    color: rgb(255, 246, 254, 50%);
+}
 #totopbutton {
     position: fixed;
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    border: #6a758a;
+    border-color: rgb(106, 117, 138, 20%);
     outline: #6a758a;
     background-color: transparent;
     color: #6a758a;
@@ -104,8 +132,10 @@ section{
     padding: 10px;
     border-radius: 10px;
     font-size: 18px;
+    width: 3rem;
+    height: 2.5rem;
 }
 
 #totopbutton:hover {
-    background-color: #fff6fe;
+    background-color: rgb(255, 246, 254, 50%);
 }
