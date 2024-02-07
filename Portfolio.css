@@ -158,7 +158,7 @@ section{
      align-items: center;
  }
 
-@media screen and (min-width: 735px) {
+@media screen and (min-width: 600px) {
     .navbar {
         justify-content: space-around;
         align-items: center;
