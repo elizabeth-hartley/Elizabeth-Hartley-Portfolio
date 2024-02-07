@@ -3,7 +3,7 @@ html{
 }
 #main{
     background: #ded9ff;
-    background: linear-gradient(#bdb5f3, #ffc5f2, #a9bae8);
+    background: linear-gradient(#b295c9, #ffc5f2, #a9bae8);
 }
 .logo{
     padding-bottom: 2rem;
@@ -28,7 +28,9 @@ html{
     align-items: center;
 }
 .navbar a:hover {
-    text-decoration: underline;
+    text-decoration: underline dotted;
+    text-decoration-thickness: 4px;
+    /*text-decoration: underline*/
 }
 .maintitle{
     font-family: 'Lora', serif;
@@ -42,10 +44,14 @@ button{
     height: 70px;
     font-size: medium;
     background-color: transparent;
-    border-color: rgb(106, 117, 138, 40%);
+    /*border-color: rgb(106, 117, 138, 40%);*/
     color:#6a758a;
     border-radius: 10px;
     margin-top: 2rem;
+    border-style: outset;
+    /*border-style: dotted;*/
+    border-width: 4px;
+    border-color: rgb(106, 117, 138, 40%);
 }
 button:hover {
     background-color: rgb(255, 246, 254, 50%);
@@ -64,18 +70,22 @@ section{
     margin-top: 7rem;
     margin-bottom: 7rem;
 }
+.images img{
+    width:200px;
+}
 .projectimages{
     display:flex;
     justify-content: center;
     border-radius: 50%;
     background-color: rgb(255, 246, 254, 30%);
     margin: 20px;
-    border: 5px solid rgb(106, 117, 138, 10%);
+    border: 5px solid rgb(106, 117, 138, 30%);
+    width: 325px;
 }
 .allsubtitles{
     color: #fff6fe;
     font-family: 'Lora', serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color: #fff6fe;
@@ -84,7 +94,7 @@ section{
 .allprojectsubtitles{
     color: #fff6fe;
     font-family: 'Lora', serif;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     text-decoration-color: #fff6fe;
 }
@@ -98,19 +108,22 @@ section{
     border-radius: 25px;
     background-color: rgb(255, 246, 254, 30%);
     padding: 20px;
+    border-style: dotted;
+    border-width: 4px;
+    border-color: rgb(255, 246, 254, 50%);
+
 }
 .icons {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: rgb(106, 117, 138, 60%);
-    font-size: 30px;
+    font-size: 25pt;
+    padding-right: 5px;
 }
-
 .icons a {
     margin: 0.5rem;
 }
-
 .icons a:hover {
     color: rgb(255, 246, 254, 50%);
 }
@@ -121,15 +134,12 @@ section{
     color: rgb(106, 117, 138, 60%);
     font-size: 30px;
 }
-
 .icons2 a {
     padding:0.2rem;
     text-decoration: none;
     color: rgb(106, 117, 138, 60%);
 
 }
-
-
 .icons2 a:hover {
     color: rgb(255, 246, 254, 50%);
 }
@@ -148,8 +158,9 @@ section{
     font-size: 18px;
     width: 3rem;
     height: 2.5rem;
+    border-style: solid;
+    border-width: 2.5px;
 }
-
 #totopbutton:hover {
     background-color: rgb(255, 246, 254, 50%);
 }.aboutmeandcontactdiv{
@@ -158,45 +169,73 @@ section{
      align-items: center;
  }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     .navbar {
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
         padding: 10px 0;
     }
+
     .navlinks {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
         min-width: 400px;
     }
-    .aboutmeandcontactdiv{
+
+    .aboutmeandcontactdiv {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 15rem;
     }
-    button{
+
+    button {
         margin-bottom: 2rem;
         height: 100px;
         width: 140px;
         font-size: large;
     }
-    .allsubtext{
+
+    .allsubtext {
         font-weight: bold;
         font-size: 25px;
         width: 25rem;
     }
-    .projectsrow{
-        display:flex;
+
+    .projectsrow {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
 
     }
+
+    .icons {
+        font-size: 30pt;
+        padding-left: 10px;
+    }
+
     .icons2 {
         flex-direction: row;
         gap: 1.5rem;
 
     }
+
+    .images img {
+        width: 250px;
+    }
+
+    .projectimages {
+        width: 375px;
+    }
+
+    .allprojectsubtitles {
+        font-size: 25px;
+    }
+
+    .allsubtitles {
+        font-size: 50px;
+    }
 }
+
