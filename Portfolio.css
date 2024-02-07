@@ -1,7 +1,7 @@
 html{
     scroll-behavior: smooth;
 }
-#main{
+#main {
     background: #ded9ff;
     background: linear-gradient(#b49ad0,#ffc5f2, #90a6e1);
 }
@@ -31,6 +31,12 @@ html{
     text-decoration: underline dotted;
     text-decoration-thickness: 4px;
     /*text-decoration: underline*/
+}
+#elizabeth{
+    font-family: 'Cormorant SC', serif;
+    color: rgba(0, 0, 0, 0.39);
+    font-size:25px;
+    letter-spacing: .2rem;
 }
 .maintitle{
     font-family: 'Lora', serif;
@@ -101,7 +107,7 @@ section{
 }
 .allsubtext{
     color: rgb(106, 117, 138, 50%);
-    font-family: 'Lora', serif;
+    font-family: serif;
     font-weight: bold;
     font-size: 20px;
     width: 20rem;
@@ -164,11 +170,17 @@ section{
 }
 #totopbutton:hover {
     background-color: rgb(255, 246, 254, 50%);
-}.aboutmeandcontactdiv{
+}
+.aboutmeandcontactdiv{
      display: flex;
      flex-direction: column;
      align-items: center;
- }
+}
+.submissionform{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 @media screen and (min-width: 700px) {
     .navbar {
@@ -240,3 +252,16 @@ section{
     }
 }
 
+/*<div>
+<form class="submissionform">
+<label>First Name</label>
+<input id="firstname" type="text">
+<label>Second Name</label>
+<input id="secondname" type="text">
+<label> Email Address</label>
+<input id="emailaddress" type="text">
+<label>Comment</label>
+<input id="comment" type="text">
+<input type="submit" value="submit">
+</form>
+</div>
