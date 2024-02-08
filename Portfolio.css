@@ -264,6 +264,7 @@ section{
     .icons2 {
         flex-direction: row;
         gap: 1.5rem;
+        flex-wrap: wrap;
 
     }
 
@@ -290,7 +291,14 @@ section{
     .skillslist{
         gap: 15rem;
     }
+
+    .leftRight{
+        overflow: hidden;
+        white-space: nowrap;
+    }
 }
+
+
 
 /*<div>
 <form class="submissionform">
